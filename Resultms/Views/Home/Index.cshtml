@@ -1,0 +1,143 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h5>Result Management System</h5>
+</div>
+<p><u><marquee><u> Students Result Publishing Site</u></marquee> </p>
+<br />
+<hr />
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <style>
+                    h1 {
+                        color: black;
+                        margin-left: 40px;
+                    }
+
+                    body, html {
+                        height: 100%;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+
+                    * {
+                        box-sizing: border-box;
+                    }
+
+                    input[type=number] {
+                        width: 100%;
+                        padding: 15px;
+                        margin: 5px 0 22px 0;
+                        border: none;
+                        background: #F4E5E8;
+                    }
+
+                        input[type= number]:focus {
+                            background-color: white;
+                            outline: none;
+                        }
+
+                    /* Set a style for the submit button */
+                    .btn-1 {
+                        background-color: lightseagreen;
+                        color: white;
+                        padding: 10px 10px;
+                        border: none;
+                        cursor: pointer;
+                        margin: 4px 2px;
+                        opacity: 0.9;
+                    }
+
+                    .btn:hover {
+                        opacity: 1;
+                    }
+
+                </style>
+
+
+                <form method="post" asp-controller="StudentController" asp-action="Index" class="container">
+                    <h4 class="text-center"><u> Student Panel</u></h4>
+                    <h7>Student Result</h7>
+                    <p><u>Kindly enter your roll no and see the result</u></p>
+
+                    <label for="Redg"><b>Search your result</b></label>
+                    <input type="search" placeholder="Enter your roll no" required value="@ViewData["GetStudentDetail"]" name="name" />
+
+                    <button type="submit" class="btn-1">Show Result</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+
+        <div class="card">
+            <div class="vl">
+                <div class="card-body">
+
+                    <style>
+                        body, html {
+                            height: 100%;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+
+                        * {
+                            box-sizing: border-box;
+                        }
+
+
+
+                        /* Set a style for the submit button */
+                        .btn1 {
+                            cursor: pointer;
+                            width: 100%;
+                            opacity: 0.9;
+                        }
+
+                            .btn1:hover {
+                                opacity: 1;
+                            }
+
+                        .vl {
+                            border-left: 1px dotted black;
+                            height: 400px;
+                            position: absolute;
+                            left: -2%;
+                            margin-left: -3px;
+                            margin-right: 10px;
+                            top: 0;
+                        }
+                    </style>
+
+                    <h4 class="text-center"><u> Admin Panel</u></h4>
+                    <a href="~/Auth/Login" button type="submit" class="btn btn-primary"> Adminstrative </a>
+                    <br />
+                    <br />
+                    <div class="card">
+                        <div class="card-body">
+                            <h5><b>Student Info</b></h5>
+                            <hr />
+
+                            <ul>
+                                <li>
+                                    The student  who have achieved first three ranks will be awarded with
+                                    differnt scholarship
+                                </li>
+
+                                <li>
+                                    Those who have failed have to aapear in rexam in Nov 30, 2022
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

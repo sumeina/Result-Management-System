@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Student";
+}
+<h3 class="text-center">Welcome Admin</h3>
+<hr />
+<p class="text-center"><u>Student List</u></p>
+<div class="container">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Home</span>
+                </a>
+
+                <a href="~/Auth/Dashboard" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                </a>
+
+                <a href="~/Student/Index" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Student List</span>
+                </a>
+
+                <a href="~/Auth/Upload" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Upload marks</span>
+                </a>
+
+                <hr>
+                <div class="dropdown pb-4">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="" alt="" class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1">Sumina</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item" href="~/Identity/Account/Manage">Profile</a></li>
+                        <li><a class="dropdown-item" href="~/Identity/Account/Manage/ChangePassword">Change password</a></li>
+
+                        <li><a class="dropdown-item" href="~/Identity/Account/Logout">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

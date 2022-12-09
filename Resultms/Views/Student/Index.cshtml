@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Resultms.Models.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<h3 class="text-center">Welcome Admin</h3>
+<hr />
+<p class="text-center"><u>Student List</u></p>
+<a href="~/Student/Index" button type="submit" class="btn btn-primary"> Records</a>
+<a href="~/Auth/Dashboard" button type="submit" class="btn btn-primary"> Dashboard</a>
+<br />
+
+<p>
+    <br />
+    <a asp-action="Create">Create New</a>
+</p>
+            <table class="table">
+                
+    <thead>
+        <tr>
+            <th>
+                id
+            </th>
+            <th>
+               Roll
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+               Math
+            </th>
+            <th>
+            Science
+            </th>
+            <th>
+                Total
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Roll)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Math)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Science)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+              <a asp-controller="Student" asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+              <a asp-controller="Student" asp-action="Details" asp-route-id="@item.id">Details</a> |
+              <a asp-controller="Student" asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+

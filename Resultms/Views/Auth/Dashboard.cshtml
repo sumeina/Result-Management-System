@@ -1,0 +1,173 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+<h3 class="text-center">Welcome Admin</h3>
+<hr />
+<div class="container">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Home</span>
+                </a>
+
+                <a href="~/Auth/Dashboard" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                </a>
+
+                <a href="~/Student/Index" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Student List</span>
+                </a>
+
+                <a href="~/Auth/Upload" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Upload marks</span>
+                </a>
+
+                <hr>
+                <div class="dropdown pb-4">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="" alt="" class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1">Admin</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item" href="~/Identity/Account/Manage">Profile</a></li>
+                        <li><a class="dropdown-item" href="~/Identity/Account/Manage/ChangePassword">Change password</a></li>
+
+                        <li><a class="dropdown-item" href="~/Identity/Account/Logout">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-8">
+            <p class="text-center"><u>Dashboard</u></p>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="card1">
+                        <div class="card-body">
+                            <style>
+                                .card1 {
+                                    background-image: linear-gradient(white, #fdfbf2);
+                                    margin-left: 40px;
+                                }
+
+                                .a {
+                                    font-family: Arial, Helvetica, sans-serif;
+                                }
+                            </style>
+                            <div class="a">
+                                <h5>Upcoming Exam </h5>
+                                <hr />
+                                <h4 class="text-center">1</h4>
+                                <p>Final Terminal Exam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card2">
+                        <div class="card-body">
+                            <style>
+                                .card2 {
+                                    background-image: linear-gradient(white, #fdfbf2);
+                                    margin-left: 40px;
+                                }
+
+                                .a {
+                                    font-family: Arial, Helvetica, sans-serif;
+                                }
+                            </style>
+                            <div class="a">
+                                <h5> Result </h5>
+                                <hr />
+                                <h3 class="text-center">1 </h3>
+                                <p>Final Unit Test Result</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="card3">
+                        <div class="card-body">
+                            <style>
+                                .card3 {
+                                    background-image: linear-gradient(white, #fdfbf2 );
+                                    margin-left: 40px;
+                                    margin-top: 36px;
+                                }
+
+                                .a {
+                                    font-family: Arial, Helvetica, sans-serif;
+                                }
+                            </style>
+                            <div class="a">
+                                <h5>Class</h5>
+                                <hr />
+                                <h4 class="text-center">1</h4>
+                                <p>Grade:1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card4">
+                        <div class="card-body">
+                            <style>
+                                .card4 {
+                                    background-image: linear-gradient(white, #fdfbf2);
+                                    margin-left: 40px;
+                                    margin-top: 36px;
+                                }
+
+                                .a {
+                                    font-family: Arial, Helvetica, sans-serif;
+                                }
+                            </style>
+                            <div class="a">
+                                <h5>Students </h5>
+                                <hr />
+                                <h3 class="text-center">10</h3>
+                                <p>Total student of Grade 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="content">
+                <h3 class="text-center">Student Progress Bar</h3>
+                <hr /><br />
+                <p> Section A: <b>99%pass</b></p><br />
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="99"
+                         aria-valuemin="0" aria-valuemax="100">
+                        99% Section A
+                    </div>
+                </div>
+                <br />
+                <p> Section B: <b>90% pass</b></p><br />
+                <div class="progress">
+
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="100"
+                         aria-valuemin="0" aria-valuemax="100">
+                        90% Section B
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
